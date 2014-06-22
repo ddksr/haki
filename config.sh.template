@@ -1,1 +1,7 @@
+#!/bin/bash
 
+read -d '' DEFAULT_DEPLOY_SCRIPT_BODY <<- "_EOF_"
+#!/bin/bash
+echo $PROJECT_DIR;
+exit 1;
+_EOF_
