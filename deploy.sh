@@ -14,6 +14,7 @@ if [[ -z $PROJECT ]]; then
 fi;
 
 PROJECT_DIR="${HAKI_DIR}projects/${PROJECT}/";
+
 deploy_script="${PROJECT_DIR}deploy.sh";
 if [[ ! -f $deploy_script ]]; then
 	echo "Project $PROJECT does not exist."
