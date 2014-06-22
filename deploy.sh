@@ -23,8 +23,12 @@ fi;
 
 shift;
 
+echo "Deploying $PROJECT ... ";
+
+curr=$PWD;
+cd $PROJECT_DIR;
 . $deploy_script $@;
 status=$?;
-
+cd $curr;
 
 exit $status;
