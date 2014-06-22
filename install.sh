@@ -8,7 +8,7 @@ fi;
 cp config.sh.template config.sh;
 
 mkdir -p "${HOME}/bin"
-ln -s "${HOME}/bin/haki" "${PWD}/deploy.sh"
-ln -s "${HOME}/bin/mkhakiproj" "${PWD}/mkproject.sh"
+ln -s "${PWD}/deploy.sh" "${HOME}/bin/haki"
+ln -s "${PWD}/mkproject.sh" "${HOME}/bin/mkhakiproj"
 
 echo "Create an environment variable HAKI_DIR!";
